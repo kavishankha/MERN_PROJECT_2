@@ -1,7 +1,6 @@
-import { styled } from '@emotion/styled';
-import { AppBar, Typography } from '@mui/material';
+import  styled  from '@emotion/styled';
 
-export const StyledAppBar = styled(AppBar)({
+export  const StyledAppBar = styled('div')({
     borderRadius: 15,
     margin: '30px 0',
     display: 'flex',
@@ -10,7 +9,7 @@ export const StyledAppBar = styled(AppBar)({
     alignItems: 'center',
 });
 
-export const StyledHeading = styled(Typography)({
+export  const StyledHeading = styled('h2')({
     color: 'rgba(0, 183, 255, 1)',
 });
 

@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Grid, Grow } from '@mui/material';
 import memories from './images/memories.png';
 import Form from './components/Form/Form';
 import Posts from './components/Posts/Posts';
 import { StyledAppBar, StyledHeading, StyledImage } from './styles';
+import { useDispatch } from "react-redux";
+import { getPosts } from './actions/posts';
 
 const App = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(getPosts());
+    }, [dispatch]); // Include 'dispatch' in the dependency array
+
     return (
         <Container maxWidth="lg">
             <StyledAppBar>

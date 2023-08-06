@@ -17,7 +17,7 @@ const App = () => {
         <Container maxWidth="lg">
             <StyledAppBar>
                 <StyledHeading>Memories</StyledHeading>
-                <StyledImage src={memories} alt="memories" height="60" />
+                <StyledImage src={memories} alt="memories" height="100" />
             </StyledAppBar>
             <Grow in>
                 <Container>

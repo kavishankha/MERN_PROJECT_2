@@ -9,7 +9,7 @@ export  const StyledAppBar = styled('div')({
     alignItems: 'center',
 });
 
-export  const StyledHeading = styled('h2')({
+export  const StyledHeading = styled('h1')({
     color: 'rgba(0, 183, 255, 1)',
 });
 

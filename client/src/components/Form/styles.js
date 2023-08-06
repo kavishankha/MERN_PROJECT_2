@@ -1,26 +1,29 @@
-import { makeStyles } from '@mui/material/styles';
+import {css} from '@emotion/react';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        '& .MuiTextField-root': {
-            margin: theme.spacing(1),
-        },
-    },
-    paper: {
-        padding: theme.spacing(2),
-    },
-    form: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-    },
-    fileInput: {
-        width: '97%',
-        margin: '10px 0',
-    },
-    buttonSubmit: {
-        marginBottom: 10,
-    },
-}));
+export const rootStyles = css`
+  & .MuiTextField-root {
+    margin: 2px;
+    
+  }
+`;
 
-export default useStyles;
+export const paperStyles = css`
+  padding: 10px;
+`;
+
+export const formStyles = css`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+export const fileInputStyles = css`
+  width: 97%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
+
+export const buttonSubmitStyles = css`
+  
+  margin-top: 10px;
+`;

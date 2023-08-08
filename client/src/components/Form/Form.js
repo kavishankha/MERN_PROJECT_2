@@ -2,19 +2,16 @@ import React, {useState} from 'react';
 import {Button, Paper, TextField, Typography} from '@mui/material';
 import FileBase from 'react-file-base64';
 import {styled} from '@mui/system';
+import { useDispatch} from 'react-redux';
+import { createPost} from  '../../actions/posts'
 
 const FormPaper = styled(Paper)(({theme}) => ({
     padding: theme.spacing(2),
 }));
 
 const Form = () => {
-    const [postData, setPostData] = useState({
-        creator: '',
-        title: '',
-        message: '',
-        tags: '',
-        selectedFile: '',
-    });
+    const [postData, setPostData] = useState({creator: '', title: '', message: '', tags: '', selectedFile: '',});
+    const dispatch = useDispatch();
 
     const clear = () => {
         setPostData({
@@ -28,7 +25,7 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add your submit logic here
+        dispatch(createPost(postData));
     };
 
     return (

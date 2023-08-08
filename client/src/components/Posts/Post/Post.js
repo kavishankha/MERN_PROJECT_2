@@ -77,7 +77,7 @@ const Post = ({post}) => {
             </CardContent>
             <PostCardActions>
                 <Button size="small" color="primary">
-                    <ThumbUpAltIcon fontSize="small"/> Like {post.likeCount}
+                    <ThumbUpAltIcon fontSize="small"/> Like
                 </Button>
                 <Button size="small" color="primary">
                     <DeleteIcon fontSize="small"/> Delete

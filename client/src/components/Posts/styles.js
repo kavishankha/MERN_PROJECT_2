@@ -1,6 +1,10 @@
 import  styled  from '@emotion/styled';
 import { AppBar, Typography } from '@mui/material';
 
+
+
+
+
 export const StyledAppBar = styled(AppBar)({
     borderRadius: 15,
     margin: '30px 0',

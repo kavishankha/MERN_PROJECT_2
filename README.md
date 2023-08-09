@@ -21,7 +21,7 @@ Memeries is a simple social media app built using React.js, Material-UI, and Nod
 
 ## Setup and Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/memeries.git`
+1. Clone the repository: `https://github.com/kavishankha/mern_project_2.git`
 2. Navigate to the project directory: `cd memeries`
 3. Install frontend dependencies: `cd client && npm install`
 4. Install backend dependencies: `cd ../server && npm install`

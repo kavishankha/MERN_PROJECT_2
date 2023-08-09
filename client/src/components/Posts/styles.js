@@ -1,23 +1,14 @@
-import  styled  from '@emotion/styled';
-import { AppBar, Typography } from '@mui/material';
+import { makeStyles } from '@material-ui/core/styles';
 
-
-
-
-
-export const StyledAppBar = styled(AppBar)({
-    borderRadius: 15,
-    margin: '30px 0',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-});
-
-export const StyledHeading = styled(Typography)({
-    color: 'rgba(0, 183, 255, 1)',
-});
-
-export const StyledImage = styled('img')({
-    marginLeft: '15px',
-});
+export default makeStyles((theme) => ({
+    mainContainer: {
+        display: 'flex',
+        alignItems: 'center',
+    },
+    smMargin: {
+        margin: theme.spacing(1),
+    },
+    actionDiv: {
+        textAlign: 'center',
+    },
+}));
